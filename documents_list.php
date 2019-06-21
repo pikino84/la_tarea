@@ -8,7 +8,7 @@ if( !isset($_SESSION['id_session'])){
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Formulario Familiar | Expediente Medico Familiar</title>
+        <title>Listado de documentos | Expediente Medico Familiar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,7 +30,7 @@ if( !isset($_SESSION['id_session'])){
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="page-title-box">
-                            <h4 class="page-title">Formulario familiar</h4>
+                            <h4 class="page-title">Listado de documentos</h4>
                         </div>
                     </div>
                 </div>

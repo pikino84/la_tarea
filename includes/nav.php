@@ -35,15 +35,22 @@
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu">
+                <?php  
+                //Array                
+                $menu[] = array('relatives_list.php', 'fi-heart', 'Familia');
+                $menu[] = array('users_list.php', 'icon-people' ,'Usuarios');
+                $menu[] = array('login_out.php', 'icon-logout', 'Salir', );
+                $i = 0;
+                //ESTRUCTURA DE CONTROL DO WHILE
+                do {
+                ?>
                     <li class="has-submenu">
-                        <a href="index.html"><i class="fi-heart "></i>Familia</a>
+                        <a href="<?= $menu[$i][0]; ?>"><i class="<?= $menu[$i][1]; ?>"></i><?= $menu[$i][2]; ?></a>
                     </li>
-                    <li class="has-submenu">
-                        <a href="#"><i class="icon-people "></i>Usuarios</a>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="#"><i class=" icon-logout "></i>Salir</a>
-                    </li>
+                <?php
+                    $i++;
+                } while ($i <= 2);
+                ?>
                 </ul>
                 <!-- End navigation menu -->
             </div> <!-- end #navigation -->
