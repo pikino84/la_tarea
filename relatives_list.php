@@ -66,13 +66,13 @@ $registros = count($field)-1;
                             <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                 <thead>
                                     <tr>
-                                        <th>Nombre</th>
-                                        <th>Edad</th>
-                                        <th>Prentesco</th>
-                                        <th>Documentos</th>
-                                        <th>doctores</th>
-                                        <th>Editar</th>
-                                        <th>Eliminar</th>
+                                        <th class="text-center">Nombre</th>
+                                        <th class="text-center">Edad</th>
+                                        <th class="text-center">Prentesco</th>
+                                        <th class="text-center">Documentos</th>
+                                        <th class="text-center">doctores</th>
+                                        <th class="text-center">Editar</th>
+                                        <th class="text-center">Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -89,10 +89,10 @@ $registros = count($field)-1;
                                         ?>
                                         <td><?= $val[$k]." ".$s; ?></td>
                                     <?php } ?>
-                                        <td><a href="documents_list.php">Icono de documento</a></td>
-                                        <td><a href="doctors_list.php">Icono de docto</a></td>
-                                        <td><a href="family_form.php">Icono de editar</a></td>
-                                        <td><a href="delete_relative.php">Icono de eliminar</a></td>
+                                        <td class="text-center"><a href="documents_list.php"><i class="fa fa-file-pdf-o"></i></a></td>
+                                        <td class="text-center"><a href="doctors_list.php"><i class="fa fa-user-md"></i></a></td>
+                                        <td class="text-center"><a href="family_form.php"><i class="fa fa-edit"></i></a></td>
+                                        <td class="text-center"><a href="delete_relative.php"><i class="fa  fa-trash"></i></a></td>
                                     </tr>
                                     <?php } ?>
                                 </tbody>
@@ -136,7 +136,6 @@ $registros = count($field)-1;
                     buttons: ['copy', 'excel', 'pdf']
                 });
                 table.buttons().container().appendTo('#datatable-buttons_wrapper .col-md-6:eq(0)');
-                //$('#datatable-buttons_wrapper .btn-group').append('<button class="add_row">Agregar</button>');
                 $('#datatable-buttons_filter').append('<div class="button-list"><a href="family_form.php" class="btn btn-success waves-light waves-effect">Agregar</a></div>');
             } );
         </script>

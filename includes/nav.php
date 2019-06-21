@@ -4,7 +4,7 @@
             <!-- Logo container-->
             <div class="logo">
                 <!-- Image Logo -->
-                <a href="index.html" class="logo">
+                <a href="relatives_list.php" class="logo">
                     <img src="assets/images/logo_sm.png" alt="" height="26" class="logo-small">
                     <img src="assets/images/logo.png" alt="" height="50" class="logo-large">
                 </a>
